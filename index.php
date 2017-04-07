@@ -5,9 +5,9 @@
 <h1>My first PHP page</h1>
   
 <?php
-echo "The time is " . date("h:i:sa"); 
+echo "The time is " . date("h:i:sa")."<br>"; 
 header("Refresh:3");
-"<br>";
+
 ?>  
   
 <?php
