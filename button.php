@@ -7,10 +7,10 @@
     </body>
 </html>
 <?php
-    if(isset($_GET['on'])) {
+    if(isset($_POST['on'])) {
         onFunc();
     }
-    if(isset($_GET['off'])) {
+    if(isset($_POST['off'])) {
         offFunc();
     }
 
