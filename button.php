@@ -1,23 +1,28 @@
+<!DOCTYPE HTML>  
 <html>
-    <body>
-        <form action="btnclick.php" method="POST">
-            <input type="submit" name="on" value="on">
-            <input type="submit" name="off" value="off">
-        </form>
-    </body>
-</html>
-<?php
-    if(isset($_POST['on'])) {
-        onFunc();
-    }
-    if(isset($_POST['off'])) {
-        offFunc();
-    }
+<head>
+<style>
+.error {color: #FF0000;}
+</style>
+</head>
+<body>  
 
-    function onFunc(){
-        echo "Button on Clicked";
-    }
-    function offFunc(){
-        echo "Button off clicked";
-    }
+<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
+  <input type="submit" name="submit" value="Submit">  
+</form>
+
+<?php
+echo "<h2>Your Input:</h2>";
+echo $name;
+echo "<br>";
+echo $email;
+echo "<br>";
+echo $website;
+echo "<br>";
+echo $comment;
+echo "<br>";
+echo $gender;
 ?>
+
+</body>
+</html>
