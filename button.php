@@ -24,8 +24,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
   
+<h2>PHP Form Validation Example</h2>
+<p><span class="error">* required field.</span></p>
+  
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
-  <input type="submit" name="submit" value="Submit">  
+  Name: <input type="text" name="name" value="<?php echo $name;?>">
+  <span class="error">* <?php echo $nameErr;?></span>
+  <br><br>  
 </form>
  
 <?php
