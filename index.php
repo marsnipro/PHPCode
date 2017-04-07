@@ -6,7 +6,7 @@
   
 <?php
 echo "The time is " . date("h:i:sa")."<br>"; 
-header("Refresh:3");
+#header("Refresh:3");
 
 ?>  
   
